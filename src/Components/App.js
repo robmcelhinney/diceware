@@ -1,43 +1,25 @@
 import React from 'react';
 import '../css/style.css';
-import NumSelect from './NumSelect';
-import Buttons from './Buttons';
+import {Words} from './Words';
+import WordButtons from './WordButtons';
 import CopyButton from './CopyButton';
 
 class App extends React.Component {
 
-
-	constructor(props) {
-		super(props);
-		this.state = {
-      number: 8,
-      textToCopy: ""
-		};
-	}
-
-	handleNumberClick = (e) => {
-		console.log("clicked: ", e.target.value)
-		this.setState({
-		  number: e.target.value
-		})
-	}
-
-	handleNewPass = (words) => {
-		console.log("words: ", words)
-		this.setState({
-		  textToCopy: words
-		})
-	}
-  
-  render() {
-    return (
-      <div className="App">
-        <NumSelect number={this.state.number} handleNewPass={this.handleNewPass} />
-        <Buttons handleNumberClick={this.handleNumberClick} />
-        <CopyButton textToCopy={this.state.textToCopy}/>
-      </div>
-    );
-  }
+    render() {
+          return (
+              <div className="App">
+                    <div id={"content-wrap"}>
+                        <Words />
+                        <WordButtons />
+                        <CopyButton />
+                    </div>
+                    <div id={"footer"}>
+                        Inspired by <a href={"https://diceware.herokuapp.com/"}>Michael Henriksen</a> | Created by <a href={"https://twitter.com/RMcElhinney"}>Rob McElhinney</a>
+                    </div>
+              </div>
+          );
+    }
 }
 
 export default App;
