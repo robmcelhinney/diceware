@@ -1,3 +1,4 @@
+const path = require('path')
 const { app, BrowserWindow } = require('electron')
 
 function createWindow () {
@@ -11,10 +12,10 @@ function createWindow () {
   })
 
   // and load the index.html of the app.
-  win.loadURL('http://localhost:3000/')
+  win.loadURL(`file://${path.join(__dirname, '../build/index.html')}`)
 
   // Open the DevTools.
-  win.webContents.openDevTools()
+  // win.webContents.openDevTools()
 }
 
 // This method will be called when Electron has finished
