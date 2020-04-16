@@ -1,5 +1,5 @@
 # Diceware
-Viewable at [https://robmcelhinney.com/Diceware/](https://robmcelhinney.com/Diceware)
+Viewable at [https://robmcelhinney.com/diceware/](https://robmcelhinney.com/diceware)
 
 ## Download
 [https://github.com/robmcelhinney/diceware/releases](https://github.com/robmcelhinney/diceware/releases)
