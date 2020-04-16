@@ -1,4 +1,4 @@
-import index from './js/index';
+// import index from './js/index';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './assets/main.css'

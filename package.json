@@ -1,7 +1,7 @@
 {
   "name": "diceware",
   "version": "0.1.0",
-  "main": "public/Main.js",
+  "main": "public/main.js",
   "homepage": "./",
   "private": true,
   "repository": "github:robmcelhinney/diceware",
@@ -37,17 +37,31 @@
     "build:css": "postcss src/assets/tailwind.css -o src/assets/main.css",
     "watch:css": "postcss src/assets/tailwind.css -o src/assets/main.css",
     "preelectron-pack": "npm run build",
-    "electron-pack": "electron-builder -c.extraMetadata.main=build/main.js"
+    "electron-pack": "electron-builder -c.extraMetadata.main=build/main.js",
+    "publish": "electron-builder",
+    "publish:github": "electron-builder -p always"
   },
   "build": {
     "files": [
       "build/**/*",
-      "node_modules/**/*"
+      "node_modules/**/*",
+      "./public/main.js"
     ],
     "directories": {
-      "buildResources": "assets"
+      "buildResources": "assets",
+      "output": "release/"
     },
-    "extends": null
+    "extends": null,
+    "productName": "Diceware",
+    "win": {
+      "target": "nsis",
+      "icon": "dist/icon-ico/icon.ico"
+    },
+    "publish": {
+      "provider": "github",
+      "owner": "robmcelhinney",
+      "repo": "diceware"
+    }
   },
   "eslintConfig": {
     "extends": "react-app"
