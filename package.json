@@ -1,15 +1,26 @@
 {
-  "name": "react-electron",
+  "name": "diceware",
   "version": "0.1.0",
-  "main": "public/Main.js",
   "private": true,
+  "homepage": "https://robmcelhinney.com/diceware",
+  "repository": "github:robmcelhinney/diceware",
+  "description": "React website to create a random diceware word list.",
+  "keywords": [
+    "react",
+    "password",
+    "diceware"
+  ],
+  "author": {
+    "name": "Robert McElhinney",
+    "email": "rob@robmcelhinney.com",
+    "url": "https://robmcelhinney.com"
+  },
   "dependencies": {
     "@material-ui/core": "^4.9.10",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "csprng": "^0.1.2",
-    "electron": "^8.2.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.0",
@@ -18,10 +29,11 @@
   },
   "scripts": {
     "start": "npm run watch:css && react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "npm run build:css && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "electron-start": "electron .",
     "build:css": "postcss src/assets/tailwind.css -o src/assets/main.css",
     "watch:css": "postcss src/assets/tailwind.css -o src/assets/main.css"
   },
@@ -42,7 +54,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^9.7.6",
-    "electron": "^8.2.2",
+    "gh-pages": "^2.2.0",
     "postcss-cli": "^7.1.0",
     "tailwindcss": "^1.2.0"
   }
