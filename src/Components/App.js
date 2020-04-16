@@ -3,6 +3,7 @@ import '../css/style.css';
 import {Words} from './Words';
 import WordButtons from './WordButtons';
 import CopyButton from './CopyButton';
+import DownloadButton from './DownloadButton';
 
 class App extends React.Component {
 
@@ -13,6 +14,7 @@ class App extends React.Component {
                         <Words />
                         <WordButtons />
                         <CopyButton />
+                        <DownloadButton />
                     </div>
                     <div id={"footer"}>
                         Inspired by <a href={"https://diceware.herokuapp.com/"}>Michael Henriksen</a> | Created by <a href={"https://twitter.com/RMcElhinney"}>Rob McElhinney</a>

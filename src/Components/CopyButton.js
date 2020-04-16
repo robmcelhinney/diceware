@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { connect } from "react-redux";
 import '../css/style.css';
 import Tooltip from '@material-ui/core/Tooltip';
@@ -13,6 +13,13 @@ const mapStateToProps = state => {
 const CopyButtonPass = ({pass}) => {
 	
 	const [open, setOpen] = React.useState(false);
+	const [navigatorExists, setNavigatorExists] = React.useState(true);
+
+	useEffect(() => {
+		if(navigator.clipboard === undefined) {
+			setNavigatorExists(false)
+		}
+	  }, [navigatorExists]);
 
 	const handleTooltipClose = () => {
 	  setOpen(false);
@@ -24,18 +31,29 @@ const CopyButtonPass = ({pass}) => {
   
 
 	const copyPass = () => {
-		navigator.clipboard.writeText(pass)
+		if (navigatorExists) {
+			navigator.clipboard.writeText(pass)
+		}
+		else {
+
+			let textArea;
+
+			textArea = document.createElement('textArea');
+			textArea.value = pass;
+			document.body.appendChild(textArea);
+
+			textArea.select()
+			document.execCommand('copy');
+        	document.body.removeChild(textArea);
+		}
 		handleTooltipOpen()
 	}
 
-	if(navigator.clipboard === undefined) {
-		return (null)
-	}
-	else{
-		return (
-			<ClickAwayListener onClickAway={handleTooltipClose}>
-				<div>
-					<Tooltip
+	
+	return (
+		<ClickAwayListener onClickAway={handleTooltipClose}>
+			<div>
+				<Tooltip
 					PopperProps={{
 					disablePortal: true,
 					}}
@@ -47,7 +65,7 @@ const CopyButtonPass = ({pass}) => {
 					title="Copied"
 					arrow
 				>
-					<button className="word-count-button font-bold py-2 px-4 
+					<button className="font-bold py-2 px-4 
 							hover:text-purple-500 hover:border-purple-500 rounded 
 							my-2 mx-2 .w-2 text-sm border"
 						onClick={() => {copyPass()}}
@@ -55,11 +73,10 @@ const CopyButtonPass = ({pass}) => {
 						Copy Passphrase
 					</button>
 				</Tooltip>
-				</div>
-			</ClickAwayListener>
-			);
-		}
-	}
+			</div>
+		</ClickAwayListener>
+	);
+}
 
 const CopyButton = connect(mapStateToProps)(CopyButtonPass);
 
