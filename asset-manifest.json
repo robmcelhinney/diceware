@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Diceware/static/css/main.d979593f.chunk.css",
-    "main.js": "/Diceware/static/js/main.e6779d54.chunk.js",
-    "main.js.map": "/Diceware/static/js/main.e6779d54.chunk.js.map",
-    "runtime-main.js": "/Diceware/static/js/runtime-main.4132e9ea.js",
-    "runtime-main.js.map": "/Diceware/static/js/runtime-main.4132e9ea.js.map",
-    "static/js/2.f009d49c.chunk.js": "/Diceware/static/js/2.f009d49c.chunk.js",
-    "static/js/2.f009d49c.chunk.js.map": "/Diceware/static/js/2.f009d49c.chunk.js.map",
-    "index.html": "/Diceware/index.html",
-    "precache-manifest.9bfe518a581dd754f607b7f1e7a7c4fa.js": "/Diceware/precache-manifest.9bfe518a581dd754f607b7f1e7a7c4fa.js",
-    "service-worker.js": "/Diceware/service-worker.js",
-    "static/css/main.d979593f.chunk.css.map": "/Diceware/static/css/main.d979593f.chunk.css.map",
-    "static/js/2.f009d49c.chunk.js.LICENSE.txt": "/Diceware/static/js/2.f009d49c.chunk.js.LICENSE.txt",
-    "static/media/style.css": "/Diceware/static/media/Inter.a4e85816.otf"
+    "main.css": "/diceware/static/css/main.96c99298.chunk.css",
+    "main.js": "/diceware/static/js/main.a040de9a.chunk.js",
+    "main.js.map": "/diceware/static/js/main.a040de9a.chunk.js.map",
+    "runtime-main.js": "/diceware/static/js/runtime-main.6c1af85e.js",
+    "runtime-main.js.map": "/diceware/static/js/runtime-main.6c1af85e.js.map",
+    "static/js/2.f009d49c.chunk.js": "/diceware/static/js/2.f009d49c.chunk.js",
+    "static/js/2.f009d49c.chunk.js.map": "/diceware/static/js/2.f009d49c.chunk.js.map",
+    "index.html": "/diceware/index.html",
+    "precache-manifest.1b4499658a194b297b985e78597d17ed.js": "/diceware/precache-manifest.1b4499658a194b297b985e78597d17ed.js",
+    "service-worker.js": "/diceware/service-worker.js",
+    "static/css/main.96c99298.chunk.css.map": "/diceware/static/css/main.96c99298.chunk.css.map",
+    "static/js/2.f009d49c.chunk.js.LICENSE.txt": "/diceware/static/js/2.f009d49c.chunk.js.LICENSE.txt",
+    "static/media/style.css": "/diceware/static/media/Inter.a4e85816.otf"
   },
   "entrypoints": [
-    "static/js/runtime-main.4132e9ea.js",
+    "static/js/runtime-main.6c1af85e.js",
     "static/js/2.f009d49c.chunk.js",
-    "static/css/main.d979593f.chunk.css",
-    "static/js/main.e6779d54.chunk.js"
+    "static/css/main.96c99298.chunk.css",
+    "static/js/main.a040de9a.chunk.js"
   ]
 }
