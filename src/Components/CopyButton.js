@@ -52,7 +52,7 @@ const CopyButtonPass = ({pass}) => {
 	
 	return (
 		<ClickAwayListener onClickAway={handleTooltipClose}>
-			<div>
+			<div className={"min-w-full"}>
 				<Tooltip
 					PopperProps={{
 					disablePortal: true,
@@ -65,9 +65,9 @@ const CopyButtonPass = ({pass}) => {
 					title="Copied"
 					arrow
 				>
-					<button className="font-bold py-2 px-4 
-							hover:text-purple-500 hover:border-purple-500 rounded 
-							my-2 mx-2 .w-2 text-sm border"
+					<button className="font-bold py-2 px-2 md:px-4
+							hover:text-purple-500 hover:border-purple-500
+							rounded my-2 mx-2 .w-2 text-sm border"
 						onClick={() => {copyPass()}}
 					>
 						Copy Passphrase

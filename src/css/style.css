@@ -10,7 +10,7 @@ html, body, #app {
 
 #content-wrap {
     padding-bottom: 3rem;    /* Footer height */
-  }
+}
 
 .App {
     text-align: center;
@@ -23,6 +23,19 @@ html, body, #app {
     color: white;
 }
 
+.download-button {
+    color: #282c34;
+}
+
+.download-button:hover {
+    color: #9f7aea;
+}
+
+.simple-modal-description > a {
+    color: #9f7aea;
+    text-decoration: underline;
+}
+
 #footer {
     font-size: 0.7em;
     color: white;
@@ -31,19 +44,4 @@ html, body, #app {
     bottom: 0;
     width: 100%;
     height: 2rem;
-}
-
-#footer a {
-    text-decoration: none;
-    color: #999;
-}
-
-#footer a:hover {
-    text-decoration: none;
-    color: #666;
-}
-
-#footer a:visited {
-    text-decoration: none;
-    color: #999;
 }

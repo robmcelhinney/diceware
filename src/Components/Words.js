@@ -6,13 +6,13 @@ import {get_all_die, get_all_words} from '../utils/Diceware';
 const word = (word, numbers, key) => {
 	return (
 		<span key={key} className={"mx-2 my-3 inline-block"}>
-			<div className={"text-3xl font-bold"}>
+			<div className={"text-xl md:text-3xl font-bold"}>
 				{word}
 			</div>
-			<div className={"text-lg font-medium tracking-wide"}>
+			<div className={"text-base md:text-lg font-medium tracking-wide"}>
 				{dice(numbers)}
 			</div>
-			<div className={"text-lg font-medium tracking-wide"}>
+			<div className={"text-base md:text-lg font-medium tracking-wide"}>
 				{numbers}
 			</div>
 		</span>
@@ -72,7 +72,7 @@ export const Words = () => {
 	
 
 	return (
-		<div className="max-w-full mb-8">{words}</div>
+		<div className={"words mb-8"}>{words}</div>
 	);
 
 }
