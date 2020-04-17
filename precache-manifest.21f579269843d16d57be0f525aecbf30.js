@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0122d26a22d53f1d1994313fb7412946",
+    "revision": "5ed728f04dad39fb367ef0c40cdb0330",
     "url": "/diceware/index.html"
   },
   {
-    "revision": "e6962d0353fde3a9f6b3",
+    "revision": "ce354d12a2791e84da1d",
     "url": "/diceware/static/css/main.4a96169c.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/diceware/static/js/2.904d347f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e6962d0353fde3a9f6b3",
-    "url": "/diceware/static/js/main.d164f0c8.chunk.js"
+    "revision": "ce354d12a2791e84da1d",
+    "url": "/diceware/static/js/main.83d2e922.chunk.js"
   },
   {
     "revision": "b8deeaee8a386d065400",

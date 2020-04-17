@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/diceware/static/css/main.4a96169c.chunk.css",
-    "main.js": "/diceware/static/js/main.d164f0c8.chunk.js",
-    "main.js.map": "/diceware/static/js/main.d164f0c8.chunk.js.map",
+    "main.js": "/diceware/static/js/main.83d2e922.chunk.js",
+    "main.js.map": "/diceware/static/js/main.83d2e922.chunk.js.map",
     "runtime-main.js": "/diceware/static/js/runtime-main.6c1af85e.js",
     "runtime-main.js.map": "/diceware/static/js/runtime-main.6c1af85e.js.map",
     "static/js/2.904d347f.chunk.js": "/diceware/static/js/2.904d347f.chunk.js",
     "static/js/2.904d347f.chunk.js.map": "/diceware/static/js/2.904d347f.chunk.js.map",
     "index.html": "/diceware/index.html",
-    "precache-manifest.191cbb4a7cad830cf8d091e7c1527d7f.js": "/diceware/precache-manifest.191cbb4a7cad830cf8d091e7c1527d7f.js",
+    "precache-manifest.21f579269843d16d57be0f525aecbf30.js": "/diceware/precache-manifest.21f579269843d16d57be0f525aecbf30.js",
     "service-worker.js": "/diceware/service-worker.js",
     "static/css/main.4a96169c.chunk.css.map": "/diceware/static/css/main.4a96169c.chunk.css.map",
     "static/js/2.904d347f.chunk.js.LICENSE.txt": "/diceware/static/js/2.904d347f.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.6c1af85e.js",
     "static/js/2.904d347f.chunk.js",
     "static/css/main.4a96169c.chunk.css",
-    "static/js/main.d164f0c8.chunk.js"
+    "static/js/main.83d2e922.chunk.js"
   ]
 }
