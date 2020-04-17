@@ -57,7 +57,7 @@ export const Words = () => {
 		setLocalNumber(number)
 		const all_die = get_all_die(number)
 		const all_words = get_all_words(all_die)
-		const pass = all_words.join("")
+		const pass = all_words.join(" ")
 		setPassphrase(pass);
 	
 		let wordsArray = [];
