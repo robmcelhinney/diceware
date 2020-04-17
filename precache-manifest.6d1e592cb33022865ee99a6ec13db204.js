@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4bde8978c8c022b08c460d7d05f16989",
+    "revision": "7510817dfb2b91fad4b130e970210310",
     "url": "/diceware/index.html"
   },
   {
-    "revision": "8cc35f52ee801fe53701",
+    "revision": "5263e0381fd0179ab58b",
     "url": "/diceware/static/css/main.96c99298.chunk.css"
   },
   {
-    "revision": "4e6846d583764f803cfe",
-    "url": "/diceware/static/js/2.cac58422.chunk.js"
+    "revision": "1da0e2c2703795d3a960",
+    "url": "/diceware/static/js/2.7e8d5ef5.chunk.js"
   },
   {
-    "revision": "e85e620f3fcc49b161ee1b95d282124d",
-    "url": "/diceware/static/js/2.cac58422.chunk.js.LICENSE.txt"
+    "revision": "eac4cf64bf573541fd6dba29c78393a0",
+    "url": "/diceware/static/js/2.7e8d5ef5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8cc35f52ee801fe53701",
-    "url": "/diceware/static/js/main.596e21ba.chunk.js"
+    "revision": "5263e0381fd0179ab58b",
+    "url": "/diceware/static/js/main.1c583f44.chunk.js"
   },
   {
     "revision": "b8deeaee8a386d065400",
