@@ -89,7 +89,7 @@ const Info = ({pass}) => {
 
 	return (
         <>
-        <a class="text-blue-500 hover:text-blue-800" href={"/#"} 
+        <a class="text-blue-500 hover:text-blue-800" href={"/diceware/#"} 
                 onClick={handleOpen}>More Info</a>
         <Modal
             open={open}
