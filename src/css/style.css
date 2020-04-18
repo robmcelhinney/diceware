@@ -38,7 +38,6 @@ html, body, #app {
 
 #modal {
   max-width: calc(100vw - 2rem);
-  max-height: calc(100vh - 2rem);
   max-height: 90%;
   justify-content: center;
   position: relative;

@@ -10,15 +10,15 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'center'
     },
     paper: {
-      position: 'absolute',
-      textAlign: 'left',
-      width: '80%',
-      backgroundColor: theme.palette.background.paper,
-      border: '2px solid #000',
-      boxShadow: theme.shadows[5],
-      padding: theme.spacing(2, 4, 3),
-      paddingTop: '2em',
-      paddingBottom: '2em'
+        position: 'absolute',
+        textAlign: 'left',
+        width: '80%',
+        backgroundColor: theme.palette.background.paper,
+        border: '2px solid #000',
+        boxShadow: theme.shadows[5],
+        padding: theme.spacing(2, 4, 3),
+        paddingTop: '1em',
+        paddingBottom: '1em',
     },
   }));
 
