@@ -12,10 +12,18 @@ function createWindow () {
   })
 
   // and load the index.html of the app.
+  // win.loadURL('http://localhost:3000/')
   win.loadURL(`file://${path.join(__dirname, '../build/index.html')}`)
 
   // Open the DevTools.
   // win.webContents.openDevTools()
+
+  const shell = require('electron').shell;
+
+  win.webContents.on('will-navigate', (event, url) => {
+    event.preventDefault()
+    shell.openExternal(url)
+  });
 }
 
 // This method will be called when Electron has finished
